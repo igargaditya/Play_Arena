@@ -15,6 +15,8 @@ public class Main {
             }
             System.out.println();
             System.out.println("Connected");
+            LoginHandler user = new LoginHandler(connection,scanner);
+            user.showMenu();
         }
         catch (SQLException e){
             System.out.println("Failed to Connect to Database");
