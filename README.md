@@ -122,19 +122,31 @@
 ## Main Menu
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/Main.png?raw=true" width="600" />
 
-1. Add a Booking
+1. Book a Turf
+
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/1.png?raw=true" width="600" />
-2. See all your reservations
+
+2. Show Reservations
+
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/2.png?raw=true" width="800" />
-3. See all Turfs
+
+3. See all Available Turfs
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/3.png?raw=true" width="800" />
-4. See all Turfs based on price range
+
+4. Filter Turf by prices 
+
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/4.png?raw=true" width="800" />
-5. Update your Reservation
+
+5. Update Reservation
+
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/5.png?raw=true" width="800" />
-6. Delete your Reservation
+
+6. Delete Reservation
+
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/6.png?raw=true" width="800" />
+
 7. Log out
+
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/7.png?raw=true" width="800" />
 
 
@@ -146,4 +158,29 @@
 - During sign-up, if the entered email ID already exists, the system notifies the user and prompts them to try a different email or log in instead.
 
 ### Main Menu 
-- In the 1) Option 
+
+1. Book a turf 
+- If the contact number is not exactly 10 digits, the system loops until a valid number is entered. 
+- If the Turf ID is not an integer, the user is prompted to re-enter it.
+- If the number of bookings is not an integer, the system asks the user to re-enter it.
+- If the Turf ID does not exist in the database, the booking is not processed, and the user is informed.
+
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/ExceptionHandling/1.png?raw=true" width="800" />
+
+2. Filter Turf By Prices
+- If the lower price input is not a valid number (NaN), the system repeatedly prompts for a valid value.
+- If the upper price input is not a valid number (NaN), the system repeatedly prompts for a valid value. 
+- If the lower price is greater than the upper price, the system displays: Lower Range is Larger than Upper Range!! and asks the user to re-enter the values.
+
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/ExceptionHandling/2.png?raw=true" width="800" />
+
+3. Update Reservation 
+- If the entered Reservation ID is invalid (does not exist) or is not a valid number, the system exits the update process, returns to the main menu, and prompts the user to try again.
+- When updating the contact number, if the input is not exactly 10 digits, the system repeatedly prompts the user until a valid number is entered.
+
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/ExceptionHandling/3.png?raw=true" width="800" />
+
+4. Delete Reservation 
+- If the entered Reservation ID is invalid (does not exist) or is not a valid number, the system cancels the delete process, returns to the main menu, and prompts the user to try again.
+
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/ExceptionHandling/1.png?raw=true" width="800" />
