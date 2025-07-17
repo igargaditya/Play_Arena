@@ -133,7 +133,18 @@ public class MenuHandler {
                         System.out.println("\nNo Reservation for Reservation ID : " + deleteId + " Found, Try Again\n");
                         break ;
                     }
-                    reservationDB.deleteReservation(connection,deleteId);
+                    Pair pair = reservationDB.deleteReservation(connection,deleteId);
+                    int bookingsToBeReverted = pair.getBookings();
+                    int turfIdReverted = pair.getTurfID();
+                    Pair pair1 = turfDb.getAvailable(connection,turfIdReverted);
+                    int capacity = pair1.getCapacity();
+                    int price = pair1.getPerPerson();
+
+                    turfDb.updateTurfAvailability(connection,capacity+bookingsToBeReverted,turfIdReverted);
+
+                    System.out.println("You have been Charged 25% of the orginal amount");
+                    System.out.println("Total Refund : " + (price*bookingsToBeReverted)*(0.75));
+                    System.out.println();
                     break ;
 
                 case 7:
