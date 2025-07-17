@@ -165,9 +165,12 @@
 - If the Turf ID is not an integer, the user is prompted to re-enter it.
 - If the number of bookings is not an integer, the system asks the user to re-enter it.
 - If the Turf ID does not exist in the database, the booking is not processed, and the user is informed.
-- If Both Turf ID and Bookings are valid, then Booking is made and availability of turf is decreased by number of bookings.
 
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/ExceptionHandling/1.png?raw=true" width="800" />
+
+- If Both Turf ID and Bookings are valid, and Availability of Turf is more , then Booking is made and availability of turf is decreased by number of bookings.
+
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/ExceptionHandling/1.1.png?raw=true" width="800" />
 
 2. Filter Turf By Prices
 - If the lower price input is not a valid number (NaN), the system repeatedly prompts for a valid value.
@@ -187,6 +190,13 @@
 - If it is valid then the availability of the turf with that cancelled bookings is increased by the number of bookings deleted
 
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/ExceptionHandling/4.png?raw=true" width="800" />
+
+- The Turf with ID = 5 has availability 7 and when a reservation which had 3 bookings were cancelled then the availability of turf increase by 3 
+
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/ExceptionHandling/5.png?raw=true" width="800" />
+
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/ExceptionHandling/6.png?raw=true" width="800" />
+
 
 
 
