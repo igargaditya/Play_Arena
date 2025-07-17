@@ -73,7 +73,7 @@ public class reservationDB {
             statement.setInt(1, reservationId);
             int affected  = statement.executeUpdate();
             if(affected>0){
-                System.out.print("Reservation Deleted");
+                System.out.print("Deleting Reservation");
                 try {
                     for (int i = 0; i < 5; i++) {
                         System.out.print(".");
@@ -83,13 +83,41 @@ public class reservationDB {
                 } catch (InterruptedException e) {
                     System.out.println(e.getMessage());
                 }
-                System.out.print("\n\n");
+                System.out.print("\nReservation Deleted\n");
             }
             else{
                 System.out.println("\nTry Again Later\n");
             }
         }
         catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void updateReservation(Connection connection, int updateId, String updatedName, long updatedContact) {
+        String query = "update reservations set guestName = ?, contactNo = ? WHERE rId=?;";
+        try(PreparedStatement statement = connection.prepareStatement(query)){
+            statement.setString(1,updatedName);
+            statement.setLong(2,updatedContact);
+            statement.setInt(3,updateId);
+            int affect = statement.executeUpdate();
+            if(affect>0){
+                System.out.print("Updating");
+                try {
+                    for (int i = 0; i < 5; i++) {
+                        System.out.print(".");
+                        Thread.sleep(200);
+                    }
+
+                } catch (InterruptedException e) {
+                    System.out.println(e.getMessage());
+                }
+                System.out.print("\nUpdated Successfully\n\n");
+            }
+            else{
+                System.out.println("\nTry Again Later\n\n");
+            }
+        } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
