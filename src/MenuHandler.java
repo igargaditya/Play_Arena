@@ -53,8 +53,18 @@ public class MenuHandler {
                         System.out.println("\nNo Turfs With Turf ID : "+ turfId + " found\n" );
                         continue;
                     }
-                    // WILL CHECK FOR AVAILABILIY
+                    Pair p = turfDb.getAvailable(connection,turfId);
+                    int getAvailability = p.getCapacity();
+                    int perPersonPrice = p.getPerPerson();
+
+                    if(getAvailability<bookings){
+                        System.out.println("FAILED, Number of Bookings are greater than availability\nTry Again\n");
+                        break;
+                    }
+
                     reservationDB.addBooking(connection,email,name,contactNo,turfId,bookings);
+                    turfDb.updateTurfAvailability(connection,getAvailability-bookings,turfId);
+                    System.out.println("Please Pay Amount: " + (bookings*perPersonPrice) +"\n");
                     break ;
                 case 2 :
                     reservationDB.showAllBooking(connection,email);

@@ -16,7 +16,7 @@ public class reservationDB {
 
             int rows = statement.executeUpdate();
             if(rows>0){
-                System.out.println("\nReservation Made\n");
+                System.out.println("\nReservation Made");
             }
             else{
                 System.out.println("Error, Try Again");
@@ -74,7 +74,7 @@ public class reservationDB {
             statement.setInt(1, reservationId);
             int affected  = statement.executeUpdate();
             if(affected>0){
-                System.out.print("Deleting Reservation");
+                System.out.print("\nDeleting Reservation");
                 try {
                     for (int i = 0; i < 5; i++) {
                         System.out.print(".");
