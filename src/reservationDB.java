@@ -30,25 +30,26 @@ public class reservationDB {
         String query = "select * from reservations where emailId = ? ;";
         try(PreparedStatement statement = connection.prepareStatement(query)){
             statement.setString(1,email);
-            ResultSet rs = statement.executeQuery();
+            try( ResultSet rs = statement.executeQuery()) {
 
-            System.out.println();
-            System.out.println("+-------------------+------------------+----------------+----------+-----------+---------------------+");
-            System.out.println("|  Reservation ID   |     Guest        |    Contact     | Turf ID  | Bookings  |  Reservation  Date  |");
-            System.out.println("+-------------------+------------------+----------------+----------+-----------+---------------------+");
 
-            while (rs.next()) {
-                System.out.printf("| %-17s | %-16s | %-14d | %-8d | %-9d | %-10s |\n",
-                        rs.getInt("RId"),
-                        rs.getString("guestName"),
-                        rs.getLong("contactNo"),
-                        rs.getInt("turfId"),
-                        rs.getInt("totalBookings"),
-                        rs.getString("reservationDate"));
+                System.out.println();
+                System.out.println("+-------------------+------------------+----------------+----------+-----------+---------------------+");
+                System.out.println("|  Reservation ID   |     Guest        |    Contact     | Turf ID  | Bookings  |  Reservation  Date  |");
+                System.out.println("+-------------------+------------------+----------------+----------+-----------+---------------------+");
+
+                while (rs.next()) {
+                    System.out.printf("| %-17s | %-16s | %-14d | %-8d | %-9d | %-10s |\n",
+                            rs.getInt("RId"),
+                            rs.getString("guestName"),
+                            rs.getLong("contactNo"),
+                            rs.getInt("turfId"),
+                            rs.getInt("totalBookings"),
+                            rs.getString("reservationDate"));
+                }
+
+                System.out.println("+-------------------+------------------+----------------+----------+-----------+---------------------+\n");
             }
-
-            System.out.println("+-------------------+------------------+----------------+----------+-----------+---------------------+\n");
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
