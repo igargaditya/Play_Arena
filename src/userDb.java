@@ -35,6 +35,7 @@ public class userDb {
         }
     }
 
+
     public static boolean checkEmail(Connection connection, String email) {
         String query = "select * from userDetail where emailId = ? ;";
         try (PreparedStatement statement = connection.prepareStatement(query)) {
