@@ -2,7 +2,7 @@
 .idea/
 *.iml
 
-src/DatabaseUtil
+src/DatabaseUtil.java
 # Build outputs
 out/
 build/
