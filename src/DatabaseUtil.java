@@ -7,6 +7,7 @@ public class DatabaseUtil {
     private static  final String username = "root";
     private  static final String password = "iamaditya21" ;
 
+
     static{
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
