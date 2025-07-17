@@ -51,7 +51,7 @@
 ![alt text](https://github.com/igargaditya/Play_Arena/blob/main/src/ErDiag.png?raw=true)
 
 
-## How to Run
+### How to Run
 - Install Java JDK and MySQL Server
 - Create database
   `CREATE DATABASE PlayArena;
@@ -59,17 +59,47 @@
 - Create the tables (see schema above)
 - Add MySQL JDBC driver (mysql-connector-j.jar) to your project
 - Configure database credentials in Main.java
-  `private static final String url = "jdbc:mysql://127.0.0.1:3306/PlayArena";
+   ```
+  private static final String url = "jdbc:mysql://127.0.0.1:3306/PlayArena";
   private static final String username = "root";
-  private static final String password = "your_password";`
+  private static final String password = "your_password";
+  
 - Compile and run
-  `javac Main.java
-  java Main`
+   ```
+   javac Main.java
+   java Main
+  
+### Main Menu Options 
+-Login 
+-Signup
+-Exit 
+
+### After Login:
+- Book Reservation
+- Show My Reservations
+- Show All Turfs 
+- Show Turfs By Price Range 
+- Update Reservation
+- Delete Reservation
+- Logout
+
+### Sample Insert for Turfs
+    ```
+    INSERT INTO turfDetail (turfName, turfCapacity, turfAvailable, turfLocation, perPersonPrice) VALUES
+    ('PavilionSportsBox', 14, 10, 'Sector 56', 320),
+    ('ClayGrounds', 20, 19, 'Phase 3', 220),
+    ('FreehitArena', 18, 9, 'Sushant Lok', 350),
+    ('Hozyo', 30, 25, 'HudaMetro', 120);
 
 
+### ScreenShots 
 
-INSERT INTO turfDetail (turfName, turfCapacity, turfAvailable, turfLocation, perPersonPrice) VALUES
-('Pavilion SportsBox', 14, 10, 'Sector 56', 320),
-('Clay Grounds', 20, 19, 'Phase 3', 220),
-('Free hitArena', 18, 9, 'Sushant Lok', 350),
-('Hozyo', 30, 25, 'HudaMetro', 120);
+### Login Menu
+- If you try to login without valid credentials, it will ask for valid details 
+![alt text](https://github.com/igargaditya/Play_Arena/blob/main/LogicMenu/1.png?raw=true)
+- SignUp with new Id 
+![alt text](https://github.com/igargaditya/Play_Arena/blob/main/LogicMenu/2.png?raw=true)
+- SignUp with Existing Id 
+![alt text](https://github.com/igargaditya/Play_Arena/blob/main/LogicMenu/3.png?raw=true)
+- Logout
+- ![alt text](https://github.com/igargaditya/Play_Arena/blob/main/LogicMenu/3.png?raw=true)
