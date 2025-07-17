@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         try(Connection connection = DatabaseUtil.getConnection()){
             Scanner scanner = new Scanner(System.in);
-            System.out.print("Connecting to playArena Database");
+            System.out.print("Connecting to PlayArena Database");
             for(int i=0 ; i<5 ; i++){
                 System.out.print(".");
                 Thread.sleep(200);
