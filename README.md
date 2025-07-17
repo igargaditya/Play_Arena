@@ -69,23 +69,23 @@
   private static final String username = "root";
   private static final String password = "your_password";
   ```
-  
+
 - Compile and run
    ```
    javac Main.java
    java Main
   ```
-  
-### Main Menu Options 
-- Login 
+
+### Main Menu Options
+- Login
 - Signup
-- Exit 
+- Exit
 
 ### After Login:
 - Book Reservation
 - Show My Reservations
-- Show All Turfs 
-- Show Turfs By Price Range 
+- Show All Turfs
+- Show Turfs By Price Range
 - Update Reservation
 - Delete Reservation
 - Logout
@@ -101,49 +101,49 @@
   ```
 
 
-### ScreenShots 
+### ScreenShots
 
 ### Login Menu
 - If you try to Log in without valid credentials, it will ask for valid details
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/1.png?raw=true" width="400" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/1.png?raw=true" width="600" />
 
 - SignUp with new Email-id
 
-&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/2.png?raw=true" width="400"/>
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/2.png?raw=true" width="600"/>
 
 - SignUp with Existing Email-id
 
-&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/3.png?raw=true" width="400"/>
+&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/3.png?raw=true" width="600"/>
 - Logout
 
-&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/4.png?raw=true" width="400"/>
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/4.png?raw=true" width="600"/>
 
-### Main Menu 
+### Main Menu
 - Add a Booking
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/1.png?raw=true" width="400" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/1.png?raw=true" width="600" />
 
-- See all your reservations 
+- See all your reservations
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/2.png?raw=true" width="400" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/2.png?raw=true" width="800" />
 
-- See all Turfs 
+- See all Turfs
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/3.png?raw=true" width="400" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/3.png?raw=true" width="800" />
 
-- See all Turfs based on price range 
+- See all Turfs based on price range
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/4.png?raw=true" width="400" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/4.png?raw=true" width="800" />
 
-- Update your Reservation 
+- Update your Reservation
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/5.png?raw=true" width="400" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/5.png?raw=true" width="800" />
 
-- Delete your Reservation 
+- Delete your Reservation
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/6.png?raw=true" width="400" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/6.png?raw=true" width="800" />
 
 - Log out
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/7.png?raw=true" width="400" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/7.png?raw=true" width="800" />
