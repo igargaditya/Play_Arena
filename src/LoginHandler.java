@@ -48,9 +48,8 @@ public class LoginHandler {
                             System.out.print(".");
                             Thread.sleep(200);
                         }
-                        System.out.println();
-                        System.out.println();
-                        System.out.println();
+                        System.out.print("\n\n");
+
                     } catch (InterruptedException e) {
                         System.out.println(e);
                     }
