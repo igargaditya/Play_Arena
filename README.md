@@ -1,39 +1,42 @@
-### Turf Reservation Application
+## Turf Reservation Application
 - A Java + MySQL-based console application to manage turf reservations.
 - Users can sign up, log in, book turfs, view reservations, and manage turf details.
 - Built with JDBC for database connectivity.
 
-## Features
+### Features
 - User Authentication
 - Reservation Management
 - Database Operations
 
-## Technologies Used
+### Technologies Used
 - Java (JDK 8+)
 - JDBC (Java Database Connectivity)
 - MySQL Database
 - Console-based UI (Java Scanner)
 
-## SCHEMAS
+### SCHEMAS
 
 1. User Detail Schema for Storing Email and Password of a User
-   `CREATE TABLE userDetail (
+   ```
+   CREATE TABLE userDetail (
    emailId VARCHAR(255) PRIMARY KEY,
    password VARCHAR(255) NOT NULL
-   );`
+   );
 
 2. Turf Detail Schema for Storing Turf Information
-   `CREATE TABLE turfDetail (
+   ```
+   CREATE TABLE turfDetail (
        turfId INT AUTO_INCREMENT PRIMARY KEY,
        turfName VARCHAR(255) NOT NULL,
        turfCapacity INT NOT NULL,
        turfAvailable INT NOT NULL,
        turfLocation VARCHAR(255) NOT NULL,
        perPersonPrice INT NOT NULL
-   );`
+   );
 
 3. Reservation Schema for Strong all the Turf Reservation
-   `CREATE TABLE reservations (
+   ```
+   CREATE TABLE reservations (
        rId INT AUTO_INCREMENT PRIMARY KEY,
        emailId VARCHAR(255) NOT NULL,
        guestName VARCHAR(255) NOT NULL,
@@ -43,7 +46,7 @@
        reservationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
        FOREIGN KEY (turfId) REFERENCES turfDetail(turfId) ON DELETE CASCADE,
        FOREIGN KEY (emailId) REFERENCES userDetail(emailId) ON DELETE CASCADE
-   );`
+   );
 
 ![alt text](https://github.com/igargaditya/Play_Arena/blob/main/src/ErDiag.png?raw=true)
 
