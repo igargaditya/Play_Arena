@@ -131,6 +131,7 @@
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/2.png?raw=true" width="800" />
 
 3. See all Available Turfs
+
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/3.png?raw=true" width="800" />
 
 4. Filter Turf by prices 
@@ -183,4 +184,7 @@
 4. Delete Reservation 
 - If the entered Reservation ID is invalid (does not exist) or is not a valid number, the system cancels the delete process, returns to the main menu, and prompts the user to try again.
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/ExceptionHandling/1.png?raw=true" width="800" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/ExceptionHandling/4.png?raw=true" width="800" />
+
+
+
