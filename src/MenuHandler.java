@@ -84,6 +84,21 @@ public class MenuHandler {
 
                     turfDb.showTurfByRange(connection,lowerRange,higherRange);
                     break;
+                case 6:
+                    System.out.print("Enter The Reservation ID you want to delete : ");
+                    String id = scanner.nextLine();
+                    if(!Utility.isInteger(id)){
+                        System.out.println("\nEnter Valid Reservation ID, Try Again\n");
+                        break ;
+                    }
+                    int reservationId = Integer.parseInt(id);
+                    boolean checkReservationID = reservationDB.checkReservationId(connection,reservationId);
+                    if(!checkReservationID){
+                        System.out.println("\nNo Reservation for Reservation ID : " + reservationId + " Found, Try Again\n");
+                        break ;
+                    }
+                    reservationDB.deleteReservation(connection,reservationId);
+                    break ;
 
 
 
@@ -97,9 +112,8 @@ public class MenuHandler {
                             System.out.print(".");
                             Thread.sleep(200);
                         }
-
-                    } catch (InterruptedException e) {
-                        System.out.println(e);
+                    } catch (Exception e) {
+                        System.out.println(e.getMessage());
                     }
                     System.out.println();
                     return ;
