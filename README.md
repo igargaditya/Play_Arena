@@ -120,3 +120,30 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/4.png?raw=true" width="400"/>
 
 ### Main Menu 
+- Add a Booking
+
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/1.png?raw=true" width="400" />
+
+- See all your reservations 
+
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/2.png?raw=true" width="400" />
+
+- See all Turfs 
+
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/3.png?raw=true" width="400" />
+
+- See all Turfs based on price range 
+
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/4.png?raw=true" width="400" />
+
+- Update your Reservation 
+
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/5.png?raw=true" width="400" />
+
+- Delete your Reservation 
+
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/6.png?raw=true" width="400" />
+
+- Log out
+
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/7.png?raw=true" width="400" />
