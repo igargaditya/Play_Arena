@@ -78,34 +78,55 @@ public class MenuHandler {
                     }
                     int higherRange = Integer.parseInt(higher);
                     if(lowerRange>higherRange){
-                        System.out.println("Lower Range is Larger than Upper Range!! ");
+                        System.out.println("Lower Range is Larger than Upper Range!!\n ");
                         continue ;
                     }
 
                     turfDb.showTurfByRange(connection,lowerRange,higherRange);
                     break;
-                case 6:
-                    System.out.print("Enter The Reservation ID you want to delete : ");
-                    String id = scanner.nextLine();
-                    if(!Utility.isInteger(id)){
+                case 5 :
+                    System.out.print("Enter The Reservation ID you want to update : ");
+                    String updatedIdString = scanner.nextLine();
+                    if(!Utility.isInteger(updatedIdString)){
                         System.out.println("\nEnter Valid Reservation ID, Try Again\n");
                         break ;
                     }
-                    int reservationId = Integer.parseInt(id);
-                    boolean checkReservationID = reservationDB.checkReservationId(connection,reservationId);
-                    if(!checkReservationID){
-                        System.out.println("\nNo Reservation for Reservation ID : " + reservationId + " Found, Try Again\n");
+                    int updateId = Integer.parseInt(updatedIdString);
+                    boolean checkUpdateId = reservationDB.checkReservationId(connection,updateId);
+                    if(!checkUpdateId){
+                        System.out.println("\nNo Reservation for Reservation ID : " + updateId + " Found, Try Again\n");
                         break ;
                     }
-                    reservationDB.deleteReservation(connection,reservationId);
+                    System.out.print("Enter Updated Guest Name : ");
+                    String updatedName = scanner.nextLine();
+                    System.out.print("Enter Mobile Number (10 Digits) : ");
+                    String updatedContactSting = scanner.nextLine();
+                    while(!Utility.isTenDigitNumber(updatedContactSting)){
+                        System.out.print("Enter Valid (10 Digit Number) : ");
+                        updatedContactSting = scanner.nextLine();
+                    }
+                    long updatedContact = Long.parseLong(updatedContactSting);
+                    reservationDB.updateReservation(connection,updateId,updatedName,updatedContact);
+                    break;
+
+
+                case 6:
+                    System.out.print("Enter The Reservation ID you want to delete : ");
+                    String deleteIdString = scanner.nextLine();
+                    if(!Utility.isInteger(deleteIdString)){
+                        System.out.println("\nEnter Valid Reservation ID, Try Again\n");
+                        break ;
+                    }
+                    int deleteId = Integer.parseInt(deleteIdString);
+                    boolean checkId = reservationDB.checkReservationId(connection,deleteId);
+                    if(!checkId){
+                        System.out.println("\nNo Reservation for Reservation ID : " + deleteId + " Found, Try Again\n");
+                        break ;
+                    }
+                    reservationDB.deleteReservation(connection,deleteId);
                     break ;
 
-
-
-
-
-                case 7 :
-
+                case 7:
                     System.out.print("\nLOGGING OUT");
                     try {
                         for (int i = 0; i < 5; i++) {
