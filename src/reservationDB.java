@@ -47,7 +47,7 @@ public class reservationDB {
                         rs.getString("reservationDate"));
             }
 
-            System.out.println("+-------------------+------------------+----------------+----------+-----------+---------------------+");
+            System.out.println("+-------------------+------------------+----------------+----------+-----------+---------------------+\n");
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
