@@ -104,16 +104,19 @@
 ### ScreenShots 
 
 ### Login Menu
-- If you try to Login without valid credentials, it will ask for valid details
+- If you try to Log in without valid credentials, it will ask for valid details
 
-  &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/1.png?raw=true" width="400" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/1.png?raw=true" width="400" />
 
-- SignUp with new Id
+- SignUp with new Email-id
 
-  &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/2.png?raw=true" width="400"/>
-- SignUp with Existing Id
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/2.png?raw=true" width="400"/>
+
+- SignUp with Existing Email-id
 
 &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/3.png?raw=true" width="400"/>
 - Logout
 
 &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/4.png?raw=true" width="400"/>
+
+### Main Menu 
