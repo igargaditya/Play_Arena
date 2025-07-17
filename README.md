@@ -101,9 +101,9 @@
   ```
 
 
-### ScreenShots
 
-### Login Menu
+
+## Login Menu
 - If you try to Log in without valid credentials, it will ask for valid details
 
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/1.png?raw=true" width="600" />
@@ -119,31 +119,31 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/4.png?raw=true" width="600"/>
 
-### Main Menu
-- Add a Booking
+## Main Menu
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/Main.png?raw=true" width="600" />
 
+1. Add a Booking
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/1.png?raw=true" width="600" />
-
-- See all your reservations
-
+2. See all your reservations
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/2.png?raw=true" width="800" />
-
-- See all Turfs
-
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/3.png?raw=true" width="800" />
-
-- See all Turfs based on price range
-
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/4.png?raw=true" width="800" />
-
-- Update your Reservation
-
+3. See all Turfs
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/3.png?raw=true" width="800" />4.
+4. See all Turfs based on price range
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/4.png?raw=true" width="800" />5.
+5. Update your Reservation
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/5.png?raw=true" width="800" />
-
-- Delete your Reservation
-
+6. Delete your Reservation
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/6.png?raw=true" width="800" />
-
-- Log out
-
+7. Log out
 &nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/MainMenu/7.png?raw=true" width="800" />
+
+
+## Exception Handling 
+
+### Login Menu 
+- If the input is not a number or is outside the range (1–3), the system prompts the user to enter a valid option again.
+- If the login credentials do not match any existing user, an "Invalid Credentials" message is displayed, and the user is asked to retry.
+- During sign-up, if the entered email ID already exists, the system notifies the user and prompts them to try a different email or log in instead.
+
+### Main Menu 
+- In the 1) Option 
