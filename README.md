@@ -70,9 +70,9 @@
    java Main
   
 ### Main Menu Options 
--Login 
--Signup
--Exit 
+- Login 
+- Signup
+- Exit 
 
 ### After Login:
 - Book Reservation
@@ -89,8 +89,8 @@
     ('PavilionSportsBox', 14, 10, 'Sector 56', 320),
     ('ClayGrounds', 20, 19, 'Phase 3', 220),
     ('FreehitArena', 18, 9, 'Sushant Lok', 350),
-    ('Hozyo', 30, 25, 'HudaMetro', 120);
-
+    ('Hozyo', 30, 25, 'HudaMetro', 120)
+    ;
 
 ### ScreenShots 
 
