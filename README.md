@@ -22,6 +22,7 @@
    emailId VARCHAR(255) PRIMARY KEY,
    password VARCHAR(255) NOT NULL
    );
+   ```
 
 2. Turf Detail Schema for Storing Turf Information
    ```
@@ -33,6 +34,7 @@
        turfLocation VARCHAR(255) NOT NULL,
        perPersonPrice INT NOT NULL
    );
+   ```
 
 3. Reservation Schema for Strong all the Turf Reservation
    ```
@@ -47,6 +49,7 @@
        FOREIGN KEY (turfId) REFERENCES turfDetail(turfId) ON DELETE CASCADE,
        FOREIGN KEY (emailId) REFERENCES userDetail(emailId) ON DELETE CASCADE
    );
+   ```
 
 ![alt text](https://github.com/igargaditya/Play_Arena/blob/main/src/ErDiag.png?raw=true)
 
@@ -54,8 +57,10 @@
 ### How to Run
 - Install Java JDK and MySQL Server
 - Create database
-  `CREATE DATABASE PlayArena;
-  USE PlayArena;`
+```
+  CREATE DATABASE PlayArena;
+  USE PlayArena;
+```
 - Create the tables (see schema above)
 - Add MySQL JDBC driver (mysql-connector-j.jar) to your project
 - Configure database credentials in Main.java
@@ -63,11 +68,13 @@
   private static final String url = "jdbc:mysql://127.0.0.1:3306/PlayArena";
   private static final String username = "root";
   private static final String password = "your_password";
+  ```
   
 - Compile and run
    ```
    javac Main.java
    java Main
+  ```
   
 ### Main Menu Options 
 - Login 
@@ -84,22 +91,24 @@
 - Logout
 
 ### Sample Insert for Turfs
-    ```
-    INSERT INTO turfDetail (turfName, turfCapacity, turfAvailable, turfLocation, perPersonPrice) VALUES
-    ('PavilionSportsBox', 14, 10, 'Sector 56', 320),
-    ('ClayGrounds', 20, 19, 'Phase 3', 220),
-    ('FreehitArena', 18, 9, 'Sushant Lok', 350),
-    ('Hozyo', 30, 25, 'HudaMetro', 120)
-    ;
+
+  ```
+        INSERT INTO turfDetail (turfName, turfCapacity, turfAvailable, turfLocation, perPersonPrice) VALUES
+        ('PavilionSportsBox', 14, 10, 'Sector 56', 320),
+        ('ClayGrounds', 20, 19, 'Phase 3', 220),
+        ('FreehitArena', 18, 9, 'Sushant Lok', 350),
+        ('Hozyo', 30, 25, 'HudaMetro', 120);
+  ```
+
 
 ### ScreenShots 
 
 ### Login Menu
 - If you try to login without valid credentials, it will ask for valid details 
-![alt text](https://github.com/igargaditya/Play_Arena/blob/main/LogicMenu/1.png?raw=true)
+![alt text](https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/1.png?raw=true)
 - SignUp with new Id 
-![alt text](https://github.com/igargaditya/Play_Arena/blob/main/LogicMenu/2.png?raw=true)
+![alt text](https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/2.png?raw=true)
 - SignUp with Existing Id 
-![alt text](https://github.com/igargaditya/Play_Arena/blob/main/LogicMenu/3.png?raw=true)
+![alt text](https://github.com/igargaditya/Play_Arena/blob/main/LogiMenu/3.png?raw=true)
 - Logout
-- ![alt text](https://github.com/igargaditya/Play_Arena/blob/main/LogicMenu/3.png?raw=true)
+- ![alt text](https://github.com/igargaditya/Play_Arena/blob/main/LoginMenu/3.png?raw=true)
