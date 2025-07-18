@@ -17,18 +17,23 @@
 ## How to Run
 
 1. Java Install Link (Choose suitable operating system)
+
 `https://www.oracle.com/in/java/technologies/downloads/#java21`
 
 2. Install MySql Server (Choose suitable operating system)
+
 `https://dev.mysql.com/downloads/mysql/` (Remember the password you set here)
 
 3. Download JDBC Connector (Choose suitable operating system) and extract it 
+
 `https://dev.mysql.com/downloads/connector/j/`
 
 4. Install Intellij Idea (Choose suitable operating system)
+
 `https://www.jetbrains.com/idea/download`
 
 5. pen the playArena folder using Intellij Idea and to add connector do the following
+
 `File->Project Structor->Libraries-> '+' -> Java -> Locate the .jar file from extracted JDBC Connector folder`
 
 6. Create Database using Terminal or MySql Workbench 
