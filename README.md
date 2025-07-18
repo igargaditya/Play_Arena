@@ -14,7 +14,29 @@
 - MySQL Database
 - Console-based UI (Java Scanner)
 
-### SCHEMAS
+## How to Run
+- Install Java JDK and MySQL Server
+- Create database
+```
+  CREATE DATABASE PlayArena;
+  USE PlayArena;
+```
+- Create the tables (see schema above)
+- Add MySQL JDBC driver (mysql-connector-j.jar) to your project
+- Configure database credentials in Main.java
+   ```
+  private static final String url = "jdbc:mysql://127.0.0.1:3306/PlayArena";
+  private static final String username = "root";
+  private static final String password = "your_password";
+  ```
+
+- Compile and run
+   ```
+   javac Main.java
+   java Main
+  ```
+  
+## SCHEMAS
 
 1. User Detail Schema for Storing Email and Password of a User
    ```
@@ -54,27 +76,6 @@
 ![alt text](https://github.com/igargaditya/Play_Arena/blob/main/src/ErDiag.png?raw=true)
 
 
-### How to Run
-- Install Java JDK and MySQL Server
-- Create database
-```
-  CREATE DATABASE PlayArena;
-  USE PlayArena;
-```
-- Create the tables (see schema above)
-- Add MySQL JDBC driver (mysql-connector-j.jar) to your project
-- Configure database credentials in Main.java
-   ```
-  private static final String url = "jdbc:mysql://127.0.0.1:3306/PlayArena";
-  private static final String username = "root";
-  private static final String password = "your_password";
-  ```
-
-- Compile and run
-   ```
-   javac Main.java
-   java Main
-  ```
 
 ### Main Menu Options
 - Login
