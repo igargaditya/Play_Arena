@@ -1,7 +1,4 @@
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class reservationDB {
     public static void addBooking(Connection connection, String email, String name, long contactNo, int turfId, int bookings) {

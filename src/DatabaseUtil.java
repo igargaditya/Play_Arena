@@ -5,9 +5,7 @@ import java.sql.SQLException;
 public class DatabaseUtil {
     private static final String url = "jdbc:mysql://127.0.0.1:3306/PlayArena";
     private static  final String username = "root";
-    private  static final String password = "iamaditya" ;
-
-
+    private  static final String password = "iamaditya21" ;
     static{
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
