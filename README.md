@@ -15,7 +15,6 @@
 - Console-based UI (Java Scanner)
 
 ## How to Run
-- Install Java JDK and MySQL Server
 
 1. Java Install Link (Choose suitable operating system)
 `https://www.oracle.com/in/java/technologies/downloads/#java21`
@@ -114,49 +113,49 @@
 ## Login Menu
 - If you try to Log in without valid credentials, it will ask for valid details
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/LoginMenu/1.png?raw=true" width="600" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/LoginMenu/1.png?raw=true" width="600" />
 
 - SignUp with new Email-id
 
-&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/LoginMenu/2.png?raw=true" width="600"/>
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/LoginMenu/2.png?raw=true" width="600"/>
 
 - SignUp with Existing Email-id
 
-&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/LoginMenu/3.png?raw=true" width="600"/>
+&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/LoginMenu/3.png?raw=true" width="600"/>
 - Logout
 
-&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/LoginMenu/4.png?raw=true" width="600"/>
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/LoginMenu/4.png?raw=true" width="600"/>
 
 ## Main Menu
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/MainMenu/Main.png?raw=true" width="600" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/MainMenu/Main.png?raw=true" width="600" />
 
 1. Book a Turf
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/MainMenu/1.png?raw=true" width="600" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/MainMenu/1.png?raw=true" width="600" />
 
 2. Show Reservations
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/MainMenu/2.png?raw=true" width="800" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/MainMenu/2.png?raw=true" width="800" />
 
 3. See all Available Turfs
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/MainMenu/3.png?raw=true" width="800" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/MainMenu/3.png?raw=true" width="800" />
 
 4. Filter Turf by prices
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/MainMenu/4.png?raw=true" width="800" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/MainMenu/4.png?raw=true" width="800" />
 
 5. Update Reservation
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/MainMenu/5.png?raw=true" width="800" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/MainMenu/5.png?raw=true" width="800" />
 
 6. Delete Reservation
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/MainMenu/6.png?raw=true" width="800" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/MainMenu/6.png?raw=true" width="800" />
 
 7. Log out
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/MainMenu/7.png?raw=true" width="800" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/MainMenu/7.png?raw=true" width="800" />
 
 
 ## Exception Handling
@@ -174,36 +173,36 @@
 - If the number of bookings is not an integer, the system asks the user to re-enter it.
 - If the Turf ID does not exist in the database, the booking is not processed, and the user is informed.
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/ExceptionHandling/1.png?raw=true" width="800" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/ExceptionHandling/1.png?raw=true" width="800" />
 
 - If Both Turf ID and Bookings are valid, and Availability of Turf is more , then Booking is made and availability of turf is decreased by number of bookings.
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/ExceptionHandling/1.1.png?raw=true" width="800" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/ExceptionHandling/1.1.png?raw=true" width="800" />
 
 2. Filter Turf By Prices
 - If the lower price input is not a valid number (NaN), the system repeatedly prompts for a valid value.
 - If the upper price input is not a valid number (NaN), the system repeatedly prompts for a valid value.
 - If the lower price is greater than the upper price, the system displays: Lower Range is Larger than Upper Range!! and asks the user to re-enter the values.
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/ExceptionHandling/2.png?raw=true" width="800" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/ExceptionHandling/2.png?raw=true" width="800" />
 
 3. Update Reservation
 - If the entered Reservation ID is invalid (does not exist) or is not a valid number, the system exits the update process, returns to the main menu, and prompts the user to try again.
 - When updating the contact number, if the input is not exactly 10 digits, the system repeatedly prompts the user until a valid number is entered.
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/ExceptionHandling/3.png?raw=true" width="800" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/ExceptionHandling/3.png?raw=true" width="800" />
 
 4. Delete Reservation
 - If the entered Reservation ID is invalid (does not exist) or is not a valid number, the system cancels the delete process, returns to the main menu, and prompts the user to try again.
 - If it is valid then the availability of the turf with that cancelled bookings is increased by the number of bookings deleted
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/ExceptionHandling/4.png?raw=true" width="800" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/ExceptionHandling/4.png?raw=true" width="800" />
 
 - The Turf with ID = 5 has availability 7 and when a reservation which had 3 bookings were cancelled then the availability of turf increase by 3 
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/ExceptionHandling/5.png?raw=true" width="800" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/ExceptionHandling/5.png?raw=true" width="800" />
 
-&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/Assets/ExceptionHandling/6.png?raw=true" width="800" />
+&nbsp;&nbsp; <img src="https://github.com/igargaditya/Play_Arena/blob/main/assets/ExceptionHandling/6.png?raw=true" width="800" />
 
 
 
