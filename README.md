@@ -16,37 +16,45 @@
 
 ## How to Run
 - Install Java JDK and MySQL Server
-- Create database
+
+1. Java Install Link (Choose suitable operating system)
+`https://www.oracle.com/in/java/technologies/downloads/#java21`
+
+2. Install MySql Server (Choose suitable operating system)
+`https://dev.mysql.com/downloads/mysql/` (Remember the password you set here)
+
+3. Download JDBC Connector (Choose suitable operating system) and extract it 
+`https://dev.mysql.com/downloads/connector/j/`
+
+4. Install Intellij Idea (Choose suitable operating system)
+`https://www.jetbrains.com/idea/download`
+
+5. pen the playArena folder using Intellij Idea and to add connector do the following
+`File->Project Structor->Libraries-> '+' -> Java -> Locate the .jar file from extracted JDBC Connector folder`
+
+6. Create Database using Terminal or MySql Workbench 
 ```
   CREATE DATABASE PlayArena;
   USE PlayArena;
 ```
-- Create the tables (see schema below)
-- Add MySQL JDBC driver (mysql-connector-j.jar) to your project
-- Configure database credentials in Main.java
-   ```
-  private static final String url = "jdbc:mysql://127.0.0.1:3306/PlayArena";
-  private static final String username = "root";
-  private static final String password = "your_password";
-  ```
 
-- Compile and run
-   ```
-   javac Main.java
-   java Main
-  ```
-  
-## SCHEMAS
+7. Configure database credentials in DatabaseUtil.java
+    ```
+     private static final String url = "jdbc:mysql://127.0.0.1:3306/PlayArena";
+     private static final String username = "root";
+    private static final String password = "your_password"; (The password you set)
+    ```
+8. Add Schemas
 
-1. User Detail Schema for Storing Email and Password of a User
+### User Detail Schema for Storing Email and Password of a User
    ```
    CREATE TABLE userDetail (
    emailId VARCHAR(255) PRIMARY KEY,
    password VARCHAR(255) NOT NULL
    );
    ```
+### Turf Detail Schema for Storing Turf Information
 
-2. Turf Detail Schema for Storing Turf Information
    ```
    CREATE TABLE turfDetail (
        turfId INT AUTO_INCREMENT PRIMARY KEY,
@@ -57,8 +65,7 @@
        perPersonPrice INT NOT NULL
    );
    ```
-
-3. Reservation Schema for Strong all the Turf Reservation
+### Reservation Schema for Strong all the Turf Reservation
    ```
    CREATE TABLE reservations (
        rId INT AUTO_INCREMENT PRIMARY KEY,
