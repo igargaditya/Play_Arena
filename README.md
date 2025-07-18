@@ -32,7 +32,7 @@
 
 `https://www.jetbrains.com/idea/download`
 
-5. pen the playArena folder using Intellij Idea and to add connector do the following
+5. Open the playArena folder using Intellij Idea and to add connector do the following
 
 `File->Project Structor->Libraries-> '+' -> Java -> Locate the .jar file from extracted JDBC Connector folder`
 
