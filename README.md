@@ -73,23 +73,6 @@
    );
    ```
 
-![alt text](https://github.com/igargaditya/Play_Arena/blob/main/src/ErDiag.png?raw=true)
-
-
-
-### Main Menu Options
-- Login
-- Signup
-- Exit
-
-### After Login:
-- Book Reservation
-- Show My Reservations
-- Show All Turfs
-- Show Turfs By Price Range
-- Update Reservation
-- Delete Reservation
-- Logout
 
 ### Sample Insert for Turfs
 
@@ -102,6 +85,23 @@
   ```
 
 
+![alt text](https://github.com/igargaditya/Play_Arena/blob/main/src/ErDiag.png?raw=true)
+
+
+
+## Main Menu Options
+- Login
+- Signup
+- Exit
+
+## After Login:
+- Book Reservation
+- Show My Reservations
+- Show All Turfs
+- Show Turfs By Price Range
+- Update Reservation
+- Delete Reservation
+- Logout
 
 
 ## Login Menu
