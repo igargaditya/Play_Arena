@@ -43,11 +43,11 @@
 ```
 
 7. Configure database credentials in DatabaseUtil.java
-    ```
+```
      private static final String url = "jdbc:mysql://127.0.0.1:3306/PlayArena";
      private static final String username = "root";
     private static final String password = "your_password"; (The password you set)
-    ```
+   ```
 8. Add Schemas
 
 ### User Detail Schema for Storing Email and Password of a User
